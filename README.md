@@ -127,3 +127,57 @@ The example below shows a building with 31.44 m² of its 150.19 m² footprint ov
 All spatial analysis was performed in **NZGD2000 / New Zealand Transverse Mercator 2000 (EPSG:2193)**.
 
 Raw source datasets and the complete processed GeoPackage are not redistributed in this repository. The source data can be obtained from the links above.
+
+## Tools and Skills
+
+| Area | Tools and capabilities |
+|---|---|
+| Spatial data engineering | FME Form, reusable workflow design, data filtering, attribute management and structured output |
+| GIS and hazard analysis | ArcGIS Online, ArcGIS Dashboards, flood-exposure screening, spatial intersection and polygon-overlay analysis |
+| Spatial data quality | CRS transformation, geometry validation, QA/QC and output-field standardisation |
+| Analytical methods | Building-level area calculation, exposure classification, overlap percentage and sensitivity testing |
+| Communication | Interactive mapping, dashboard design, summary statistics and clear communication of analytical limitations |
+
+## Interpretation and Limitations
+
+This project provides a screening-level assessment of potential spatial exposure. A building is classified as potentially exposed when it meets the selected spatial relationship with a mapped flood-plain polygon.
+
+The results do not represent:
+
+- flood depth, velocity, duration or event probability;
+- building vulnerability, structural damage or financial loss;
+- observed inundation or confirmed property-level impacts; or
+- engineering, insurance or planning advice.
+
+Additional limitations include:
+
+- The study area is an independently defined pilot extent rather than an official catchment or administrative reporting boundary.
+- Building outlines represent mapped footprints and do not provide information about floor level, occupancy, construction type or asset value.
+- The overlap-class thresholds were defined for this portfolio project and are not official Auckland Council classifications.
+- Differences between the any-intersection and centroid results demonstrate sensitivity to the spatial classification rule, not full uncertainty in the underlying flood model.
+- Results depend on the coverage, currency and modelling assumptions of the source datasets.
+
+The reported 22,674.87 m² is the area of building footprints spatially overlapping the mapped flood plain. It should not be interpreted as observed inundation or damaged floor area.
+
+## Repository Contents
+
+```text
+├── images/
+│   ├── dashboard_building_popup.png
+│   ├── dashboard_overview.png
+│   ├── dashboard_with_legend.png
+│   ├── fme_data_preparation.png
+│   ├── fme_overlap_calculation.png
+│   ├── fme_overlap_classification_output.png
+│   └── fme_overlap_workflow_overview.png
+├── summary/
+│   ├── method_comparison.csv
+│   └── overlap_class_summary.csv
+├── workflow/
+│   └── flood_exposure.fmw
+├── .gitignore
+└── README.md
+```
+
+## Portfolio Note
+This independent portfolio project was developed to demonstrate natural-hazard GIS, spatial data engineering, reproducible workflow design and analytical communication skills. It was not commissioned by or produced on behalf of Auckland Council or LINZ.
