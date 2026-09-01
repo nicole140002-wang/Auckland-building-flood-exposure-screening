@@ -115,3 +115,15 @@ The dashboard allows users to:
 The example below shows a building with 31.44 m² of its 150.19 m² footprint overlapping the mapped flood plain, producing an overlap percentage of 20.93% and a Partial classification.
 
 ![Building-level flood exposure result](images/dashboard_building_popup.png)
+
+## Data
+
+| Dataset | Source | Purpose |
+|---|---|---|
+| Flood Plains | [Auckland Council ArcGIS Feature Service](https://services1.arcgis.com/n4yPwebTjJCmXB6W/arcgis/rest/services/Flood_Plains/FeatureServer/0) | Mapped flood-hazard extent |
+| NZ Building Outlines | [LINZ Data Service](https://data.linz.govt.nz/layer/101290-nz-building-outlines/) | Building footprints |
+| Pilot study area | Independently defined | Processing and reporting extent |
+
+All spatial analysis was performed in **NZGD2000 / New Zealand Transverse Mercator 2000 (EPSG:2193)**.
+
+Raw source datasets and the complete processed GeoPackage are not redistributed in this repository. The source data can be obtained from the links above.
