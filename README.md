@@ -20,3 +20,10 @@ The project uses FME Form to prepare and validate spatial data, compare alternat
 The centroid rule identified 82 fewer buildings than the any-intersection rule, a difference of 6.08 percentage points. This demonstrates that screening results are sensitive to the spatial classification rule applied.
 
 Of the 270 potentially exposed buildings, 153 were fully within the mapped flood plain, 36 had majority overlap, 45 had partial overlap, and 36 had marginal overlap.
+
+## Study Area
+
+The analysis covers an independently defined pilot area around Walmsley Road and Te Ararata Creek in Māngere, Auckland. The boundary was created as a practical processing and reporting extent for this portfolio project; it is not an official catchment or administrative boundary.
+
+![Walmsley–Te Ararata pilot study area](images/dashboard_overview.png)
+
