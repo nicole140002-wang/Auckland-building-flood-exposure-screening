@@ -1,2 +1,6 @@
-# Auckland-building-flood-exposure-screening
-A reproducible FME and ArcGIS workflow for screening building exposure to mapped flood plains in Auckland, including overlap classification, centroid sensitivity testing, spatial QA and an interactive dashboard.
+# Walmsley–Te Ararata Building Flood Exposure Screening
+A screening-level spatial assessment of building exposure to mapped flood plains in the Walmsley–Te Ararata pilot area, Auckland.
+
+The project uses FME Form to prepare and validate spatial data, compare alternative exposure rules, calculate building-level flood-plain overlap, and publish the results through an ArcGIS Online dashboard.
+
+![Flood exposure screening dashboard](images/dashboard_with_legend.png)
