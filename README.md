@@ -60,3 +60,43 @@ The any-intersection rule is more inclusive and captures buildings with even sma
 This comparison represents sensitivity to the selected spatial classification rule, not full uncertainty in the underlying flood model.
 
 [View the method comparison data](summary/method_comparison.csv)
+
+## Building-Level Overlap Analysis
+
+Buildings identified by the any-intersection rule were assessed in greater detail by calculating the area and percentage of each building footprint overlapping the mapped flood plain.
+
+The 270 potentially exposed buildings have a combined footprint area of 35,811.90 m². Of this area, 22,674.87 m² overlaps the mapped flood plain, equivalent to 63.32%.
+
+| Overlap class | Rule | Buildings |
+|---|---|---:|
+| Fully within | ≥99.9% | 153 |
+| Majority overlap | >50% and <99.9% | 36 |
+| Partial overlap | >10% and ≤50% | 45 |
+| Marginal overlap | >0% and ≤10% | 36 |
+
+The classes distinguish buildings almost entirely within the mapped flood plain from those captured by only a small boundary intersection.
+
+### FME Overlap Workflow
+
+Click the image to view the full-resolution workflow.
+
+[![FME overlap workflow overview](images/fme_overlap_workflow_overview.png)](images/fme_overlap_workflow_overview.png)
+
+<details>
+<summary>View detailed overlap calculation and classification workflows</summary>
+
+### Overlap Calculation
+
+![FME overlap calculation](images/fme_overlap_calculation.png)
+
+### Classification and Output
+
+![FME overlap classification and output](images/fme_overlap_classification_output.png)
+
+</details>
+
+[View the overlap-class summary data](summary/overlap_class_summary.csv)
+
+[Download the complete FME workspace](workflow/flood_exposure.fmw)
+
+
