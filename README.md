@@ -43,3 +43,20 @@ The analysis was implemented as a repeatable FME Form workflow:
 ### Data Preparation Workflow
 
 ![FME data preparation workflow](images/fme_data_preparation.png)
+
+## Exposure-Rule Comparison
+
+Two spatial rules were compared to assess how the definition of exposure affects the screening results.
+
+| Method | Rule | Exposed buildings | Exposure rate |
+|---|---|---:|---:|
+| Any intersection | Any part of the building footprint intersects the mapped flood plain | 270 | 20.03% |
+| Building centroid | The building centroid falls inside the mapped flood plain | 188 | 13.95% |
+
+The centroid rule identified 82 fewer buildings than the any-intersection rule, reducing the estimated exposure rate by 6.08 percentage points.
+
+The any-intersection rule is more inclusive and captures buildings with even small areas of overlap. The centroid rule is more restrictive and excludes many buildings located near flood-plain boundaries.
+
+This comparison represents sensitivity to the selected spatial classification rule, not full uncertainty in the underlying flood model.
+
+[View the method comparison data](summary/method_comparison.csv)
