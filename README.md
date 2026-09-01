@@ -110,8 +110,6 @@ The dashboard allows users to:
 - review overlap-class distributions and summary indicators; and
 - select individual buildings to inspect footprint area, overlap area, overlap percentage and classification.
 
-[Open the interactive dashboard](https://www.arcgis.com/apps/dashboards/ad505e5d1c124abbaf52b48ec3f2fbc5)
-
 ### Building-Level Result
 
 The example below shows a building with 31.44 m² of its 150.19 m² footprint overlapping the mapped flood plain, producing an overlap percentage of 20.93% and a Partial classification.
