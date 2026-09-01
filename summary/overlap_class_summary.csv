@@ -1,0 +1,5 @@
+overlap_class,overlap_rule,building_count,building_footprint_m2,overlap_area_m2
+Fully within,>=99.9%,153,16851.72,16851.67
+Majority overlap,>50% and <99.9%,36,4494.94,3675.91
+Partial overlap,>10% and <=50%,45,6949.18,1831.67
+Marginal overlap,>0% and <=10%,36,7516.06,315.62
