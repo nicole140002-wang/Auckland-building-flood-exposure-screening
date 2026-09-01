@@ -27,3 +27,19 @@ The analysis covers an independently defined pilot area around Walmsley Road and
 
 ![Walmsley–Te Ararata pilot study area](images/dashboard_overview.png)
 
+## Method
+
+The analysis was implemented as a repeatable FME Form workflow:
+
+1. Clipped 12,628 Auckland Council Flood Plains features to 15 polygons within the pilot area.
+2. Reprojected LINZ Building Outlines from NZGD2000 (EPSG:4167) to NZTM2000 (EPSG:2193).
+3. Filtered 41,683 source buildings to 1,348 buildings within the study area.
+4. Validated flood and building geometries before spatial analysis.
+5. Classified buildings using an any-intersection exposure rule.
+6. Repeated the assessment using building centroids as a sensitivity test.
+7. Calculated the area and percentage of each exposed building footprint overlapping the mapped flood plain.
+8. Exported the spatial results and summary tables for publication through ArcGIS Online and ArcGIS Dashboards.
+
+### Data Preparation Workflow
+
+![FME data preparation workflow](images/fme_data_preparation.png)
